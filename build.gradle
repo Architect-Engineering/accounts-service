@@ -18,6 +18,9 @@ buildscript {
     }
 }
 
+plugins {
+    id "com.github.ManifestClasspath" version "0.1.0-RELEASE"       
+}
 ext['spring-security.version'] = '5.1.1.RELEASE'
 
 repositories {
@@ -33,6 +36,8 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'com.gorylenko.gradle-git-properties'
+apply plugin: 'application'
+mainClassName = 'io.pivotal.accounts.AccountsApplication'
 
 println version
 
