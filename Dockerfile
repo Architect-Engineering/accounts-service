@@ -1,10 +1,12 @@
 # Use Managed Base Image Oracle JDK 11
 FROM openjdk:8-jre-alpine3.9
 
-
+ARG HARNESS_URL
 
 # Human-readable title of the image (string)
 LABEL org.opencontainers.image.title="account-service"
+
+LABEL harness.url="${HARNESS_URL}"
 
 # Default the target version to 0.0.0-SNAPSHOT
 ARG gavVersion=0.5.0
