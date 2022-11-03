@@ -16,7 +16,7 @@ ENV gavVersion ${gavVersion}
 
 
 # Copy the already build jar to the image
-COPY build /bin/
+COPY build/libs/accounts-service-0.5.0 /bin/
 
 # Expose default port for external communication
 EXPOSE 8443
