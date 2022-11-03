@@ -14,10 +14,9 @@ ARG gavVersion=0.5.0
 # Override the version from environment, if present (helpful with CI tools)
 ENV gavVersion ${gavVersion}
 
-CMD ls -ltr
 
 # Copy the already build jar to the image
-COPY build/libs/accounts-service-${gavVersion}.jar /bin/
+COPY build /bin/
 
 # Expose default port for external communication
 EXPOSE 8443
