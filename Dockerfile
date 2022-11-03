@@ -14,7 +14,7 @@ ARG gavVersion=0.5.0
 # Override the version from environment, if present (helpful with CI tools)
 ENV gavVersion ${gavVersion}
 
-RUN cd harness; ls -ltr
+RUN cd harness/build/libs; ls -ltr
 
 # Copy the already build jar to the image
 COPY build/libs/ /bin/
