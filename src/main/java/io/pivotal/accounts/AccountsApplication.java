@@ -17,7 +17,7 @@ import javax.net.ssl.HttpsURLConnection;
  * @author David Ferreira Pinto
  */
 @SpringBootApplication
-@EnableDiscoveryClient
+/* @EnableDiscoveryClient */
 @EnableCircuitBreaker
 public class AccountsApplication {
 
