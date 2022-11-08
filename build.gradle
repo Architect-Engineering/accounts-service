@@ -97,7 +97,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.cloud:spring-cloud-starter-sleuth")
     implementation("io.pivotal.spring.cloud:spring-cloud-services-starter-config-client")
-    implementation("io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry")
+    //implementation("io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry")
     implementation("io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker")
     implementation("org.springframework.security:spring-security-data")
     implementation("org.springframework.boot:spring-boot-starter-security")
