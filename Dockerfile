@@ -19,7 +19,7 @@ ENV gavVersion ${gavVersion}
 COPY build/libs/accounts-service.jar /bin/
 
 # Expose default port for external communication
-EXPOSE 8443
+EXPOSE 8082
 
 # Command to run the executable
 ENTRYPOINT [ "java" ,"-jar",  "/bin/accounts-service.jar" ]
